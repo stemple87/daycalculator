@@ -37,7 +37,7 @@ namespace DayCalculatorNS.Objects
       Assert.Equal("Thursday", result);
     }
     [Fact]
-    public void Test1_ToCheckTheDayName_ReturnMonday()
+    public void Test3_ToCheckTheDayNameForLeapYear_ReturnMonday()
     {
       // //Arrange
       int input1 = 29;
