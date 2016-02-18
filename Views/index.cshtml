@@ -1,0 +1,17 @@
+<h1>Week Day Generator</h1>
+<form action="/" method="post">
+  <label for="new-input2">Enter Month (numbers only)</label>
+  <input type="text" name="new-input2">
+  <br></br>
+  <label for="new-input1">Enter Day (numbers only)</label>
+  <input type="text" name="new-input1">
+  <br></br>
+  <label for="new-input3">Enter Year (numbers only)</label>
+  <input type="text" name="new-input3">
+  <br></br>
+  <button type="submit" name="button">Click here to view the day of the week</button>
+</form>
+@if (@Model != "")
+{
+  <p>The day of the week is: @Model</p>
+}
