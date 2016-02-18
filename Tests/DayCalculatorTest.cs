@@ -1,21 +1,26 @@
 using System.Collections.Generic;
+using System.Globalization;
 using Xunit;
-namespace ScrabbleScoreNS.Objects
+namespace DayCalculatorNS.Objects
+
 {
-  public class ScrabbleScoreTest
+  public class DayCalculatorTest
   {
     [Fact]
-    public void Test1_ToCheckTheDate_ReturnSunday()
+    public void Test1_ToCheckTheDayName_ReturnMonday()
     {
       // //Arrange
-      // string input1 = "A";
-      // ScrabbleScore testPoints = new ScrabbleScore(input1);
+      int input1 = 15;
+      int input2 = 2;
+      int input3 = 2016;
+
+      DayCalculator testDayCalculator = new DayCalculator(input1, input2, input3);
       //
       // //Act
-      // string result = testPoints.GetResults();
+      var result = testDayCalculator.DayName();
       //
       //Assert
-      Assert.Equal("sunday", result);
+      Assert.Equal("Monday", result);
     }
   }
 }
